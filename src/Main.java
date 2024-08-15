@@ -1,15 +1,15 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Autor autor = new Autor("Lev", "Tolstoy");
+        Book book = new Book("War and Peace", autor.getAutor(), 2000);
+        System.out.println("book = " + book.getNameBook() + " autor " + book.getAuthor() + " year " + book.getPublishingYear());
+        book.setPublishingYear(2020);
+        System.out.println("book = " + book.getNameBook() + " autor " + book.getAuthor() + " year " + book.getPublishingYear());
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Autor autor2 = new Autor("Lewis", "Carrol");
+        Book book2 = new Book("Alis in mirrow", autor2.getAutor(), 2011);
+        System.out.println("book = " + book2.getNameBook() + " autor " + book2.getAuthor() + " year " + book2.getPublishingYear());
+        book2.setPublishingYear(2020);
+        System.out.println("book = " + book2.getNameBook() + " autor " + book2.getAuthor() + " year " + book2.getPublishingYear());
     }
 }

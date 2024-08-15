@@ -2,16 +2,16 @@ import java.time.LocalDate;
 
 public class Book {
     private String nameBook;
-    private String autor;
+    private Author author;
     public int publishingYear;
 
     public Book (String nameBook, String autor, int publishingYear) {
         this.nameBook = nameBook;
-        this.autor = autor;
+        this.author = autor;
         this.publishingYear = publishingYear;
     }
     public String getAuthor() {
-        return autor;
+        return author;
     }
     public String getNameBook() {
         return nameBook;

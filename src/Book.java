@@ -2,11 +2,12 @@ import java.time.LocalDate;
 
 public class Book {
     private String nameBook;
-    private Author author;
+    Author author;
     public int publishingYear;
 
-    public Book (String nameBook, Author, int publishingYear) {
+    public Book (String nameBook, Author author, int publishingYear) {
         this.nameBook = nameBook;
+        this.author = new Author(author.getFirstName(), author.getLastName());
         this.publishingYear = publishingYear;
     }
 
